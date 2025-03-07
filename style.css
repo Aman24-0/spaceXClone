@@ -1,0 +1,280 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  /* background-color: aqua; */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+@font-face {
+  font-family: D-DINB;
+  src: url(/font/D-DIN-Bold.otf);
+}
+@font-face {
+  font-family: D-DINR;
+  src: url(/font/D-DIN-Bold.otf);
+}
+@font-face {
+  font-family: D-DINC;
+  src: url(/font/D-DINCondensed.otf);
+}
+
+header {
+  font-family: "D-DINR", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  height: 100px;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-right: 22px;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+}
+.nav {
+  height: 13px;
+  width: 900px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+li,
+.logo {
+  cursor: pointer;
+}
+
+.butt {
+  height: 22px;
+  width: 75px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop {
+  cursor: pointer;
+}
+
+.one {
+  height: 590px;
+  width: 1349px;
+  background-image: url(/image/pic1.jpg);
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  top: 260px;
+  left: 50px;
+}
+h1 {
+  font-size: 48px;
+  font-family: "D-DINB", sans-serif;
+}
+h4 {
+  font-size: 20px;
+  font-family: "D-DINR", sans-serif;
+}
+
+.box {
+  margin-top: 20px;
+  height: 50px;
+  width: 160px;
+  border: 2px solid white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: white;
+  color: black;
+}
+
+.two {
+  height: 590px;
+  width: 1349px;
+  background-image: url(/image/pic2.jpg);
+  background-size: cover;
+}
+.content2 {
+  position: relative;
+  top: 340px;
+  left: 50px;
+}
+
+.three {
+  height: 590px;
+  width: 1349px;
+  background-image: url(/image/pic3.jpg);
+  background-size: cover;
+}
+.content3 {
+  position: relative;
+  top: 340px;
+  left: 50px;
+}
+
+.four {
+  height: 590px;
+  width: 1349px;
+  background-image: url(/image/pic4.jpg);
+  background-size: cover;
+}
+.content4 {
+  position: relative;
+  top: 340px;
+  left: 50px;
+}
+
+.five {
+  /* border: 2px solid salmon; */
+  height: 759px;
+  width: 100%;
+  width: 1349px;
+}
+video {
+  position: relative;
+  z-index: -10;
+}
+.content5 {
+  position: absolute;
+  top: 465%;
+  left: 50px;
+}
+
+footer {
+  background-color: black;
+  height: 81px;
+  width: 1349px;
+}
+
+.foot {
+  margin: auto;
+  position: relative;
+  top: 35px;
+  font-size: 12px;
+  height: 41px;
+  width: 340px;
+}
+
+.name {
+  cursor: text;
+}
+
+@media screen and (max-width: 360px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .nav  {
+    position: absolute;
+    /* border: 2px seagreen solid; */
+    height: 280px;
+    width: 180px;
+    right: 1%;
+    top: 12%;
+  }
+
+  ul, .nav {
+    display: none;
+  }
+  
+  .active{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .butt {
+    display: flex;
+  }
+
+  .one, .two, .three, .four, .five {
+    /* height: 590px; */
+    width: 360px;
+    background-size: cover;
+    background-position: 60%;
+  }
+  header{
+    width: 350px;
+  }
+  video{
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+  }
+
+  .five{
+    position: relative;
+            width: 100%;
+            width: 430px; 
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+  }
+
+  .contentH {
+    /* position: relative; */
+    top: 260px;
+    left: 30px;
+  }
+  .content2, .content3, .content4  {
+    top: 380px;
+  }
+  .content5{
+    color: black;}
+  
+  h1 {
+    font-size: 36px;
+    font-family: "D-DINB", sans-serif;
+  }
+  h4 {
+    font-size: 16px;
+    font-family: "D-DINR", sans-serif;
+  }
+
+  footer {
+    width: 360px;
+  }
+  
+  .foot {
+    top: 35px;
+    font-size: 12px;
+    width: 340px;
+  }
+
+  .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name{
+    /* margin-left: 25px; */
+    font-size: 16px;
+  }
+
+  ul {
+    font-size: 12px;
+    /* justify-content: space-between; */
+    gap: 20px;
+  }
+  
+}
